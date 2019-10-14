@@ -1,0 +1,74 @@
+{
+	"name": "LoyaltyRedeemedHistory",
+	"fantasyName": "Loyalty Redeemed History",
+	"vendor": "Netscore",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "This extension is used to show all events for points redemtion",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/LoyaltyRedeemedHistory.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/LoyaltyRedeemedHistory/Configuration/LoyaltyRedeemedHistory.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/LoyaltyRedeemedHistory/Templates/netscore_loyaltyredeemedhistory_loyaltyredeemedhistory_list.tpl",
+					"Modules/LoyaltyRedeemedHistory/Templates/netscore_loyaltyredeemedhistory_loyaltyredeemedhistory_edit.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"myaccount": "Modules/LoyaltyRedeemedHistory/Sass/_loyaltyredeemedhistory-loyaltyredeemedhistory.scss"
+		},
+		"files": [
+			"Modules/LoyaltyRedeemedHistory/Sass/_loyaltyredeemedhistory-loyaltyredeemedhistory.scss",
+			"Modules/LoyaltyRedeemedHistory/Sass/_loyaltyredeemedhistory.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"myaccount": "Modules/LoyaltyRedeemedHistory/JavaScript/Netscore.LoyaltyRedeemedHistory.LoyaltyRedeemedHistory.js"
+		},
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/LoyaltyRedeemedHistory/JavaScript/Netscore.LoyaltyRedeemedHistory.LoyaltyRedeemedHistory.js",
+					"Modules/LoyaltyRedeemedHistory/JavaScript/LoyaltyRedeemedHistory.Router.js",
+					"Modules/LoyaltyRedeemedHistory/JavaScript/LoyaltyRedeemedHistory.List.View.js",
+					"Modules/LoyaltyRedeemedHistory/JavaScript/LoyaltyRedeemedHistory.Edit.View.js",
+					"Modules/LoyaltyRedeemedHistory/JavaScript/LoyaltyRedeemedHistory.Collection.js",
+					"Modules/LoyaltyRedeemedHistory/JavaScript/LoyaltyRedeemedHistory.Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/LoyaltyRedeemedHistory/SuiteScript/Netscore.LoyaltyRedeemedHistory.LoyaltyRedeemedHistory.js",
+		"files": [
+			"Modules/LoyaltyRedeemedHistory/SuiteScript/Netscore.LoyaltyRedeemedHistory.LoyaltyRedeemedHistory.js",
+			"Modules/LoyaltyRedeemedHistory/SuiteScript/LoyaltyRedeemedHistory.ServiceController.js",
+			"Modules/LoyaltyRedeemedHistory/SuiteScript/LoyaltyRedeemedHistory.Model.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Netscore/LoyaltyRedeemedHistory@1.0.0",
+	"activation_id": "1",
+	"extension_id": "106"
+}

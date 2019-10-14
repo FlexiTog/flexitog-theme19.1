@@ -1,0 +1,74 @@
+{
+	"name": "ItemBadges",
+	"fantasyName": "Item Badges",
+	"vendor": "SuiteCommerce",
+	"version": "1.1.1",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"description": "Item Badges lets you display labels, such as New, On Sale, or Best Seller, on a product. These badges appear on the product detail, product listings, and image carousel sections.",
+	"skins": [],
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/Main/Configuration/ItemBadges.json"
+		]
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Main/Sass/_itembadges.scss"
+		},
+		"files": [
+			"Modules/Main/Sass/_itembadges.scss"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/Templates/itembadges_list.tpl",
+					"Modules/Main/Templates/itembadges_view.tpl",
+					"Modules/Main/Templates/itembadges_svg_bookmark.tpl",
+					"Modules/Main/Templates/itembadges_svg_diagonal_banner.tpl",
+					"Modules/Main/Templates/itembadges_svg_flag.tpl",
+					"Modules/Main/Templates/itembadges_svg_rectangle_banner.tpl",
+					"Modules/Main/Templates/itembadges_svg_tag.tpl",
+					"Modules/Main/Templates/itembadges_svg_tapered_banner.tpl"
+				]
+			}
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/SuiteCommerce.ItemBadges.EntryPoint.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/JavaScript/SuiteCommerce.ItemBadges.EntryPoint.js",
+					"Modules/Main/JavaScript/ItemBadges.ProductDetail.js",
+					"Modules/Main/JavaScript/ItemBadges.Collection.js",
+					"Modules/Main/JavaScript/ItemBadges.Model.js",
+					"Modules/Main/JavaScript/ItemBadges.View.js",
+					"Modules/Main/JavaScript/ItemBadges.BadgesList.View.js",
+					"Modules/Main/JavaScript/ItemBadges.ProductList.js",
+					"Modules/Main/JavaScript/ItemBadges.GlobalViews.js",
+					"Modules/Instrumentation/JavaScript/InstrumentationHelper.Collection.js",
+					"Modules/Instrumentation/JavaScript/InstrumentationHelper.js",
+					"Modules/Instrumentation/JavaScript/InstrumentationHelper.Model.js",
+					"Modules/Instrumentation/JavaScript/Logger.js"
+				]
+			}
+		}
+	},
+	"local_folder": "Workspace/ItemBadges",
+	"path": "SuiteBundles/Bundle 284094/extensions/SuiteCommerce/ItemBadges@1.1.1",
+	"activation_id": "1",
+	"extension_id": "301"
+}

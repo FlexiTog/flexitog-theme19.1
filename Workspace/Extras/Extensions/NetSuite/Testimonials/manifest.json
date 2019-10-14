@@ -1,0 +1,107 @@
+{
+	"name": "Testimonials",
+	"fantasyName": "Testimonials",
+	"vendor": "NetSuite",
+	"type": "extension",
+	"cct": [
+		{
+			"icon": "img/ns_sc_ext_ctestimonialscct_icon.svg",
+			"settings_record": "customrecord_ns_sc_ext_ctestimonialscct",
+			"registercct_id": "ns_sc_ext_ctestimonialscct",
+			"label": "Testimonials",
+			"description": "Add testimonials with images, texts and links to your website."
+		}
+	],
+	"target": "SCA,SCS",
+	"version": "1.0.1",
+	"description": "Add testimonials with images, texts and links to your website.",
+	"assets": {
+		"img": {
+			"files": [
+				"img/ns_sc_ext_ctestimonialscct_icon.svg"
+			]
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/TestimonialsCCT/Templates/netsuite_testimonialscct_horizontal.tpl",
+					"Modules/TestimonialsCCT/Templates/netsuite_testimonialscct_vertical.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/TestimonialsCCT/Templates/netsuite_testimonialscct_horizontal.tpl",
+					"Modules/TestimonialsCCT/Templates/netsuite_testimonialscct_vertical.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/TestimonialsCCT/Templates/netsuite_testimonialscct_horizontal.tpl",
+					"Modules/TestimonialsCCT/Templates/netsuite_testimonialscct_vertical.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/TestimonialsCCT/Sass/_testimonials-testimonialscct.scss",
+			"myaccount": "Modules/TestimonialsCCT/Sass/_testimonials-testimonialscct.scss",
+			"checkout": "Modules/TestimonialsCCT/Sass/_testimonials-testimonialscct.scss"
+		},
+		"files": [
+			"Modules/BxSlider4.2.14/jquery.bxslider.scss",
+			"Modules/TestimonialsCCT/Sass/_testimonials-testimonialscct.scss",
+			"Modules/TestimonialsCCT/Sass/_testimonialscct.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/TestimonialsModule/JavaScript/NetSuite.Testimonials.TestimonialsModule.js",
+			"myaccount": "Modules/TestimonialsModule/JavaScript/NetSuite.Testimonials.TestimonialsModule.js",
+			"checkout": "Modules/TestimonialsModule/JavaScript/NetSuite.Testimonials.TestimonialsModule.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/BxSlider4.2.14/jquery.bxslider.js",
+					"Modules/TestimonialsCCT/JavaScript/NetSuite.Testimonials.TestimonialsCCT.js",
+					"Modules/TestimonialsCCT/JavaScript/TestimonialsCCT.Collection.js",
+					"Modules/TestimonialsCCT/JavaScript/TestimonialsCCT.Model.js",
+					"Modules/TestimonialsCCT/JavaScript/TestimonialsCCT.View.js",
+					"Modules/TestimonialsModule/JavaScript/NetSuite.Testimonials.TestimonialsModule.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/BxSlider4.2.14/jquery.bxslider.js",
+					"Modules/TestimonialsCCT/JavaScript/NetSuite.Testimonials.TestimonialsCCT.js",
+					"Modules/TestimonialsCCT/JavaScript/TestimonialsCCT.Collection.js",
+					"Modules/TestimonialsCCT/JavaScript/TestimonialsCCT.Model.js",
+					"Modules/TestimonialsCCT/JavaScript/TestimonialsCCT.View.js",
+					"Modules/TestimonialsModule/JavaScript/NetSuite.Testimonials.TestimonialsModule.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/BxSlider4.2.14/jquery.bxslider.js",
+					"Modules/TestimonialsCCT/JavaScript/NetSuite.Testimonials.TestimonialsCCT.js",
+					"Modules/TestimonialsCCT/JavaScript/TestimonialsCCT.Collection.js",
+					"Modules/TestimonialsCCT/JavaScript/TestimonialsCCT.Model.js",
+					"Modules/TestimonialsCCT/JavaScript/TestimonialsCCT.View.js",
+					"Modules/TestimonialsModule/JavaScript/NetSuite.Testimonials.TestimonialsModule.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteBundles/Bundle 284094/extensions/NetSuite/Testimonials@1.0.1",
+	"activation_id": "1",
+	"extension_id": "1001"
+}

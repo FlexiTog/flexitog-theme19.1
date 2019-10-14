@@ -1,0 +1,69 @@
+{
+	"name": "LoyaltyEarnedHistory",
+	"fantasyName": "Loyalty Earned History",
+	"vendor": "Netscore",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "This extension is used to show all events and points  description  like availble points, earned  points, redeemed  points  ",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/LoyaltyEarnedHistory.Service.ss"
+			]
+		}
+	},
+	"templates": {
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/LoyaltyEarnedHistory/Templates/netscore_loyaltyearnedhistory_loyaltyearnedhistory_list.tpl",
+					"Modules/LoyaltyEarnedHistory/Templates/netscore_loyaltyearnedhistory_loyaltyearnedhistory_edit.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"myaccount": "Modules/LoyaltyEarnedHistory/Sass/_loyaltyearnedhistory-loyaltyearnedhistory.scss"
+		},
+		"files": [
+			"Modules/LoyaltyEarnedHistory/Sass/_loyaltyearnedhistory-loyaltyearnedhistory.scss",
+			"Modules/LoyaltyEarnedHistory/Sass/_loyaltyearnedhistory.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"myaccount": "Modules/LoyaltyEarnedHistory/JavaScript/Netscore.LoyaltyEarnedHistory.LoyaltyEarnedHistory.js"
+		},
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/LoyaltyEarnedHistory/JavaScript/Netscore.LoyaltyEarnedHistory.LoyaltyEarnedHistory.js",
+					"Modules/LoyaltyEarnedHistory/JavaScript/LoyaltyEarnedHistory.Router.js",
+					"Modules/LoyaltyEarnedHistory/JavaScript/LoyaltyEarnedHistory.List.View.js",
+					"Modules/LoyaltyEarnedHistory/JavaScript/LoyaltyEarnedHistory.Edit.View.js",
+					"Modules/LoyaltyEarnedHistory/JavaScript/LoyaltyEarnedHistory.Collection.js",
+					"Modules/LoyaltyEarnedHistory/JavaScript/LoyaltyEarnedHistory.Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/LoyaltyEarnedHistory/SuiteScript/Netscore.LoyaltyEarnedHistory.LoyaltyEarnedHistory.js",
+		"files": [
+			"Modules/LoyaltyEarnedHistory/SuiteScript/Netscore.LoyaltyEarnedHistory.LoyaltyEarnedHistory.js",
+			"Modules/LoyaltyEarnedHistory/SuiteScript/LoyaltyEarnedHistory.ServiceController.js",
+			"Modules/LoyaltyEarnedHistory/SuiteScript/LoyaltyEarnedHistory.Model.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Netscore/LoyaltyEarnedHistory@1.0.0",
+	"activation_id": "1",
+	"extension_id": "102"
+}

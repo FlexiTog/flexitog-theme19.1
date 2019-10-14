@@ -1,0 +1,97 @@
+{
+	"name": "LoyaltyPointsPLP",
+	"fantasyName": "LoyaltyPointsPLP",
+	"vendor": "Netscore",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "This extension is used to show points in PLP page",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/LoyaltyPointsPLP.Service.ss"
+			]
+		}
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/LoyaltyPointsPLP/Templates/netscore_loyaltypointsplp_loyaltypointsplp_list.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/LoyaltyPointsPLP/Templates/netscore_loyaltypointsplp_loyaltypointsplp_list.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/LoyaltyPointsPLP/Templates/netscore_loyaltypointsplp_loyaltypointsplp_list.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/LoyaltyPointsPLP/Sass/_loyaltypointsplp-loyaltypointsplp.scss",
+			"myaccount": "Modules/LoyaltyPointsPLP/Sass/_loyaltypointsplp-loyaltypointsplp.scss",
+			"checkout": "Modules/LoyaltyPointsPLP/Sass/_loyaltypointsplp-loyaltypointsplp.scss"
+		},
+		"files": [
+			"Modules/LoyaltyPointsPLP/Sass/_loyaltypointsplp-loyaltypointsplp.scss",
+			"Modules/LoyaltyPointsPLP/Sass/_loyaltypointsplp.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/LoyaltyPointsPLP/JavaScript/Netscore.LoyaltyPointsPLP.LoyaltyPointsPLP.js",
+			"myaccount": "Modules/LoyaltyPointsPLP/JavaScript/Netscore.LoyaltyPointsPLP.LoyaltyPointsPLP.js",
+			"checkout": "Modules/LoyaltyPointsPLP/JavaScript/Netscore.LoyaltyPointsPLP.LoyaltyPointsPLP.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/LoyaltyPointsPLP/JavaScript/Netscore.LoyaltyPointsPLP.LoyaltyPointsPLP.js",
+					"Modules/LoyaltyPointsPLP/JavaScript/LoyaltyPointsPLP.List.View.js",
+					"Modules/LoyaltyPointsPLP/JavaScript/LoyaltyPointsPLP.Collection.js",
+					"Modules/LoyaltyPointsPLP/JavaScript/LoyaltyPointsPLP.Model.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/LoyaltyPointsPLP/JavaScript/Netscore.LoyaltyPointsPLP.LoyaltyPointsPLP.js",
+					"Modules/LoyaltyPointsPLP/JavaScript/LoyaltyPointsPLP.List.View.js",
+					"Modules/LoyaltyPointsPLP/JavaScript/LoyaltyPointsPLP.Collection.js",
+					"Modules/LoyaltyPointsPLP/JavaScript/LoyaltyPointsPLP.Model.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/LoyaltyPointsPLP/JavaScript/Netscore.LoyaltyPointsPLP.LoyaltyPointsPLP.js",
+					"Modules/LoyaltyPointsPLP/JavaScript/LoyaltyPointsPLP.List.View.js",
+					"Modules/LoyaltyPointsPLP/JavaScript/LoyaltyPointsPLP.Collection.js",
+					"Modules/LoyaltyPointsPLP/JavaScript/LoyaltyPointsPLP.Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/LoyaltyPointsPLP/SuiteScript/Netscore.LoyaltyPointsPLP.LoyaltyPointsPLP.js",
+		"files": [
+			"Modules/LoyaltyPointsPLP/SuiteScript/Netscore.LoyaltyPointsPLP.LoyaltyPointsPLP.js",
+			"Modules/LoyaltyPointsPLP/SuiteScript/LoyaltyPointsPLP.ServiceController.js",
+			"Modules/LoyaltyPointsPLP/SuiteScript/LoyaltyPointsPLP.Model.js",
+			"Modules/LoyaltyPointsPLP/SuiteScript/Profile.Model.Site.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Netscore/LoyaltyPointsPLP@1.0.0",
+	"activation_id": "1",
+	"extension_id": "104"
+}

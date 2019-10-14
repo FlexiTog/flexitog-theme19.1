@@ -1,0 +1,66 @@
+{
+	"name": "GenerateGiftCard",
+	"fantasyName": "Generate Gift Card",
+	"vendor": "Netscore",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "This extension is used to reedem your loyalty points  to generate  gift certificate ",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/GenerateGiftCard.Service.ss"
+			]
+		}
+	},
+	"templates": {
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/GenerateGiftCard/Templates/netscore_generategiftcard_generategiftcard_list.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"myaccount": "Modules/GenerateGiftCard/Sass/_generategiftcard-generategiftcard.scss"
+		},
+		"files": [
+			"Modules/GenerateGiftCard/Sass/_generategiftcard-generategiftcard.scss",
+			"Modules/GenerateGiftCard/Sass/_generategiftcard.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"myaccount": "Modules/GenerateGiftCard/JavaScript/Netscore.GenerateGiftCard.GenerateGiftCard.js"
+		},
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/GenerateGiftCard/JavaScript/Netscore.GenerateGiftCard.GenerateGiftCard.js",
+					"Modules/GenerateGiftCard/JavaScript/GenerateGiftCard.Router.js",
+					"Modules/GenerateGiftCard/JavaScript/GenerateGiftCard.List.View.js",
+					"Modules/GenerateGiftCard/JavaScript/GenerateGiftCard.Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/GenerateGiftCard/SuiteScript/Netscore.GenerateGiftCard.GenerateGiftCard.js",
+		"files": [
+			"Modules/GenerateGiftCard/SuiteScript/Netscore.GenerateGiftCard.GenerateGiftCard.js",
+			"Modules/GenerateGiftCard/SuiteScript/GenerateGiftCard.ServiceController.js",
+			"Modules/GenerateGiftCard/SuiteScript/GenerateGiftCard.Model.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Netscore/GenerateGiftCard@1.0.0",
+	"activation_id": "1",
+	"extension_id": "101"
+}

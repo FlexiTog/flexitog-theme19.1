@@ -1,0 +1,281 @@
+/*
+    Example sass file
+    Use:
+        * url(getExtensionAssetsPath('img/image.jpg')); to reference images and fonts in your assets folder
+        * url(getThemeAssetsPath('img/theme-image.jpg')); to reference images and fonts in the active theme available
+*/ 
+
+.loyalty_points_section {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin: 0px;
+    padding:0px;
+  }
+  .earned_points_section {
+    margin: 30px auto  0px auto;
+    background-color: transparent;
+    color: #222;
+    text-align: center;
+    
+    @media (min-width: $screen-sm-min) {
+      margin: 0 auto;
+    }
+
+  }
+  .earnedsection__content {
+    padding: 0;
+    vertical-align: middle;
+    
+    margin: 0 auto;
+    
+    /*@media (min-width: $screen-sm-min) {
+      width: 57%;
+      }*/
+    }
+    .earnedsection__content h1 {
+      color: #fff;
+      font-size: 30px;
+      border-radius: 50%;
+      
+
+      background: #231f20;
+      width: 160px;
+      height: 160px;
+      vertical-align: middle;
+      line-height: 160px;
+      margin: 0px auto;
+      padding: 0px;   
+   /* @media (min-width: $screen-xs-min) {
+     font-size: 27px;
+   }
+   @media (min-width: $screen-md-min) {
+     font-size: 37px;
+     padding: 40px 0;  
+   }
+   @media (min-width: $screen-lg-min) {
+    padding: 55px 0; 
+    }*/
+    
+  }
+  .earned_sec h1 {
+   background: #231f20;
+ }
+ .available_sec h1 {
+   background: #8bc63e;
+   font-weight: 600;
+ }
+ .redeem_sec h1 {
+   background: #d21f39;
+ }
+ .earnedsection__content h2 {
+  color: #fff;
+}
+.earnedsection__content h1 small {
+  font-size: 18px;
+  padding: 0px;
+  margin: 0 0 0 0px;
+  font-weight: 200;
+}
+.loyalty_tablesection {
+  margin: 13% 0px 0px 0px;
+  width: 100%;
+  float: left;
+  height: auto;
+}
+.earnedsection__inner h3 {
+  margin: 11px 0px 3px 0px;
+  font-size: 22px;    
+}
+.earn_pnt {
+  color: #231f20;
+}
+.available_pnt {
+ color: #8bc63e;
+ font-weight: bold;
+}
+.redeem_pnt {
+  color: #d21f39;
+}
+.earnedsection__inner p {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 5px 0 0 0;
+  color: #000000;
+  font-weight: 400;
+}
+.earned_tablehistory {
+  width: 100%;
+  height: auto;
+  float: left;
+  margin:45px 0px 0px 0px;
+  padding: 0px
+}
+.loyalty_table {
+  width: 100%;
+  margin-bottom: 20px;
+  @media (max-width: $screen-xs-min) {
+    max-width: 100%;
+    margin:0px;
+  }
+}
+
+.loyalty_thead th {
+  background: #231f20;
+  color: #fff;
+  text-align: center;
+  padding: 9px 0px !important;
+
+}
+.lyalty_title {
+  padding: 0;
+  border-top: 1px solid #c7dde9;
+  display: inline-block;
+  width: 100%;
+  font-size: 24px;
+}
+.lyalty_title h3 {
+  color: #000;
+  display: inline-block;
+  padding: 0px;
+  margin: 9px 0;
+  font-weight: 400;
+}
+/*.loyalty_thead th:first-child {
+    border-top-left-radius: 6px;
+}
+
+.loyalty_thead th:last-child {
+    border-top-right-radius: 6px;
+}
+.loyalty_table tr td:first-child {
+    border-bottom-left-radius: 6px;
+ }
+.loyalty_table tr td:last-child {
+    border-bottom-right-radius: 6px;
+    }*/
+    .loyalty_table tr td {
+     border: 1px solid #d8d8d8;
+     float: left;
+     width: 100%;
+     @media (min-width: $screen-xs-min) {
+       float: none; 
+       width: auto;
+     }
+   }
+  /* @media only screen and (max-width: 767px) {
+    .earned_points_section {
+      margin: 0 auto 20px auto;
+    }
+    .earnedsection__content {
+      width: 60%;
+      padding: 0px 0;
+    }
+    .loyaltyviews-row td {
+      width: 100%;
+      float: left;
+      display: inline-block;
+    }
+    .loyalty_thead {
+      display: none;
+    }
+    .loyalty_table {
+     margin: 0 0 20px 0;
+   }
+
+ }
+ @media screen and (width:823px) {
+  .earnedsection__content h1 {
+    padding: 34px 0px;
+  }
+  .earnedsection__inner h3 {
+    font-size: 18px;
+}
+}
+@media screen and (width:667px) {
+ .earnedsection__content {
+    width: 31%;
+}
+}*/
+.loyalty_thead {
+  display: none;
+  @media (min-width: $screen-xs-min) {
+    display: table-row;
+  }
+}
+.loyalty_earnedtable {width: 100%;}
+.loyalty_earnedtable, .loyalty_earnedtable tr, .loyalty_earnedtable td, .loyalty_earnedtable th {
+  border: 1px solid #e1e1e1;
+  border-collapse: collapse;
+  padding: 5px;
+}
+.loyalty_earnedtable tr td, .loyalty_earnedtable th{
+  text-align: center;
+}
+@media only screen and (max-width: 1169px) {
+  .container {width: 100%;}
+}
+@media only screen and (max-width: 767px) {
+  .container {width: 100%;}
+}
+@media only screen and (max-width: 500px) {
+  .loyalty_earnedtable {
+    width: auto;
+  }
+  .loyalty_earnedtable, .loyalty_earnedtable head, .loyalty_earnedtable tbody, .loyalty_earnedtable th, .loyalty_earnedtable td, .loyalty_earnedtable tr {
+    display: block;
+  }
+  .loyalty_earnedtable thead tr {
+    display: none;
+  }
+  .loyalty_earnedtable tr {
+   border: 1px solid #ccc; 
+ }
+ .loyalty_earnedtable td {
+  border: none;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  padding-left: 40% !important;
+  white-space: normal;
+  text-align:left;
+  min-height: 30px;
+  overflow: hidden;
+  word-break:break-all;
+}
+.loyalty_earnedtable td:before {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 45%;
+  padding-right: 10px;
+  text-align:left;
+  font-weight: bold;
+}
+.loyalty_earnedtable td:before { content: attr(data-title); }
+}
+.loyalty_earnedtable tr th{
+  background: #231f20;
+  color: #fff;
+}
+
+
+.empty-points {
+    color: #cf0a2c;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 0px 0px 24px 0px;
+}
+.show-earn {
+ color: #0067b9;
+    font-size: 18px;
+    margin: 0px 0px 10px 0px;
+}
+.refer-pnt li {
+    list-style: circle;
+    margin: 0px 0px 0 18px;
+    line-height: 26px;
+    padding: 0px 0px 0px 0px;
+    color: #1a1a1a;
+    
+}

@@ -1,0 +1,107 @@
+/*
+Banner Border: sc-color-theme-border-light
+*/
+$cart-shipping-bar-background-initial: $sc-color-theme-background; /* editable({
+   "type": "color",
+   "label": "Initial Background"
+})*/
+
+$cart-shipping-bar-text-initial: $sc-color-copy; /* editable({
+   "type": "color",
+   "label": "Initial Text"
+})*/
+.cart-shipping-bar-initial{
+  background: $cart-shipping-bar-background-initial;
+  color: $cart-shipping-bar-text-initial;
+}
+
+$cart-shipping-bar-background-progress: $sc-color-theme-background; /* editable({
+   "type": "color",
+   "label": "Progress Background"
+})*/
+
+$cart-shipping-bar-text-progress: $sc-color-copy; /* editable({
+   "type": "color",
+   "label": "Progress Text"
+})*/
+.cart-shipping-bar-progress{
+  background: $cart-shipping-bar-background-progress;
+  color: $cart-shipping-bar-text-progress;
+}
+
+$cart-shipping-bar-background-congratulations: $sc-color-theme-background; /* editable({
+   "type": "color",
+   "label": "Congratulations Background"
+})*/
+
+$cart-shipping-bar-text-congratulations: $sc-color-copy; /* editable({
+   "type": "color",
+   "label": "Congratulations Text"
+})*/
+.cart-shipping-bar-congratulations{
+  background: $cart-shipping-bar-background-congratulations;
+  color: $cart-shipping-bar-text-congratulations;
+}
+
+$cart-shipping-bar-border: $sc-color-theme-border-light; /* editable({
+   "type": "color",
+   "label": "Banner Border"
+})*/
+
+.cart-shipping-message{
+    border-top: 1px solid $cart-shipping-bar-border;
+    border-bottom: 1px solid $cart-shipping-bar-border;
+    text-align: center;
+    font-weight: $sc-font-weight-semibold;
+    font-size: $sc-font-size-s;
+    margin-bottom: $sc-margin-lv4;
+}
+
+$cart-shipping-bar-value-text: $sc-color-copy-dark; /* editable({
+   "type": "color",
+   "label": "Value Text"
+})*/
+
+$cart-shipping-bar-progress-value-text: $sc-color-copy-dark; /* editable({
+   "type": "color",
+   "label": "Progress Value Text"
+})*/
+
+.cart-shipping-bar-initial [class=value-text-color]{
+   color: $cart-shipping-bar-value-text;
+}
+
+.cart-shipping-bar-progress [class=value-text-color]{
+   color: $cart-shipping-bar-progress-value-text;
+}
+
+/*
+group({
+   "id": "shipping-bar-cart",
+   "label": "Cart Banner",
+   "description": "",
+   "children": [
+      "$cart-shipping-bar-background-initial",
+      "$cart-shipping-bar-text-initial",
+      "$cart-shipping-bar-background-progress",
+      "$cart-shipping-bar-text-progress",
+      "$cart-shipping-bar-background-congratulations",
+      "$cart-shipping-bar-text-congratulations",
+      "$cart-shipping-bar-border",
+      "$cart-shipping-bar-value-text",
+      "$cart-shipping-bar-progress-value-text"
+   ]
+})
+*/
+
+
+.desktop{
+    @media (max-width: $screen-sm-min) {
+        display: none
+    }
+}
+.mobile{
+    @media (min-width: $screen-sm-min) {
+        display: none;
+    }
+}

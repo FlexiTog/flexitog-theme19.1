@@ -1,0 +1,64 @@
+{
+	"name": "ShippingBar",
+	"fantasyName": "Shipping Bar",
+	"vendor": "SuiteCommerce",
+	"version": "1.1.0",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"description": "The SuiteCommerce Shipping Bar extension lets you add a bar and banners to your website to inform shoppers of how much they have to spend to qualify for free or special rate shipping.",
+	"skins": [],
+	"configuration": {
+		"files": [
+			"Modules/Main/Configuration/Main.json"
+		]
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Main/Sass/_main.scss"
+		},
+		"files": [
+			"Modules/Main/Sass/_main.scss",
+			"Modules/HeaderShippingBar/Sass/_header-shipping-bar.scss",
+			"Modules/PDPShippingBar/Sass/_pdp-shipping-bar.scss",
+			"Modules/CartShippingBar/Sass/_cart-shipping-bar.scss",
+			"Modules/Main/Sass/_icons.scss"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/HeaderShippingBar/Templates/suitecommerce_shippingbar_header.tpl",
+					"Modules/PDPShippingBar/Templates/suitecommerce_shippingbar_pdp.tpl",
+					"Modules/CartShippingBar/Templates/suitecommerce_shippingbar_cart.tpl",
+					"Modules/HeaderShippingBar/Templates/suitecommerce_shippingbar_header_text.tpl"
+				]
+			}
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/Javascript/SuiteCommerce.ShippingBar.Main.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/PDPShippingBar/Javascript/PDPShippingBar.View.js",
+					"Modules/HeaderShippingBar/Javascript/HeaderShippingBar.View.js",
+					"Modules/CartShippingBar/Javascript/CartShippingBar.View.js",
+					"Modules/Main/Javascript/Main.Model.js",
+					"Modules/Main/Javascript/SuiteCommerce.ShippingBar.Main.js",
+					"Modules/Main/Javascript/Configuration.Helper.js",
+					"Modules/HeaderShippingBar/Javascript/HeaderText.View.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Log.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Logger.js"
+				]
+			}
+		}
+	},
+	"local_folder": "Workspace\\ShippingBar",
+	"path": "SuiteBundles/Bundle 284094/extensions/SuiteCommerce/ShippingBar@1.1.0",
+	"activation_id": "1",
+	"extension_id": "801"
+}

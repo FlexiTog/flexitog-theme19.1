@@ -1,0 +1,68 @@
+{
+	"name": "ReferandEarn",
+	"fantasyName": "Refer and Earn",
+	"vendor": "Netscore",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "This extension is used to share the referral code  to  your  friends",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/ReferandEarn.Service.ss"
+			]
+		}
+	},
+	"templates": {
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/ReferandEarn/Templates/netscore_referandearn_referandearn_list.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"myaccount": "Modules/ReferandEarn/Sass/_referandearn-referandearn.scss"
+		},
+		"files": [
+			"Modules/ReferandEarn/Sass/_referandearn-referandearn.scss",
+			"Modules/ReferandEarn/Sass/_referandearn.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"myaccount": "Modules/ReferandEarn/JavaScript/Netscore.ReferandEarn.ReferandEarn.js"
+		},
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/ReferandEarn/JavaScript/Netscore.ReferandEarn.ReferandEarn.js",
+					"Modules/ReferandEarn/JavaScript/ReferandEarn.Router.js",
+					"Modules/ReferandEarn/JavaScript/ReferandEarn.List.View.js",
+					"Modules/ReferandEarn/JavaScript/ReferandEarn.Edit.View.js",
+					"Modules/ReferandEarn/JavaScript/ReferandEarn.Collection.js",
+					"Modules/ReferandEarn/JavaScript/ReferandEarn.Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/ReferandEarn/SuiteScript/Netscore.ReferandEarn.ReferandEarn.js",
+		"files": [
+			"Modules/ReferandEarn/SuiteScript/Netscore.ReferandEarn.ReferandEarn.js",
+			"Modules/ReferandEarn/SuiteScript/ReferandEarn.ServiceController.js",
+			"Modules/ReferandEarn/SuiteScript/ReferandEarn.Model.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Netscore/ReferandEarn@1.0.0",
+	"activation_id": "1",
+	"extension_id": "107"
+}

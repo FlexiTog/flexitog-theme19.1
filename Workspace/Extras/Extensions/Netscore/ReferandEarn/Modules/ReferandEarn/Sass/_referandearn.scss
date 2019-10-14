@@ -1,0 +1,130 @@
+/*
+    Example sass file
+    Use:
+        * url(getExtensionAssetsPath('img/image.jpg')); to reference images and fonts in your assets folder
+        * url(getThemeAssetsPath('img/theme-image.jpg')); to reference images and fonts in the active theme available
+*/ 
+.refer_section {
+     width: 100%;
+     float: left;
+     margin: 0px;
+     padding: 10px;
+     border: 1px solid #e4e4e4;
+     border-radius: 5px;
+ }
+ .earnrefer_image {
+     width: 100%;
+     float: left;
+     margin: 0px;
+     padding: 10px;
+ }
+
+ .earnrefer_image img {
+    width: 100%;
+    margin: 32% 0px;
+}
+.earnrefer_content {
+    width: 100%; 
+    height: auto;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+.earnrefer_content h1 {
+    font-size: 27px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-style: italic;
+    color: blue;
+    text-align: center;
+}
+.earnrefer_content h3 {
+    font-size: 19px;
+    text-align: center;
+    padding: 7px 0px;
+    margin: 10px auto;
+    color: #46989c;
+    line-height: 27px;
+    border-top: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;
+    width: 100%;
+    font-style: italic;
+}
+.referal_point {
+    text-align: center;
+    margin: 24px 0 14px 0px;
+    font-size: 14px;
+}
+.referal_point span {
+    border: 2px dashed red;
+    padding: 9px 12px;
+    font-size: 21px;
+    font-weight: 600;
+    color: blue;
+    margin: 0 0 0 7px;
+}
+.earnrefer_content h4 {
+    text-align: center;
+    font-size: 23px;
+    margin: 30px 0 10px 0;
+    color: #490092;
+}
+.earn_mail input {
+    width: 67%;
+    padding: 8px 36px;
+    margin: 0px auto;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.earn_mailtitle {
+    font-size: 15px;
+    text-align: center;
+    margin: 3px 0 9px 0;
+    color: #060708;
+}
+.earnpoint_submit {
+  text-align: center;
+}
+.earn_submit {
+    background: #cf0a2c !important;
+    border: 1px solid #cf0a2c !important;
+    padding: 10px;
+    color: white;
+}
+.email-textbox-new {
+    width: auto !important;
+    display: inline-block !important;
+    border-radius: 3px !important;
+}
+.earn_mail {
+    text-align: center;
+    margin: 30px 0px 0 0;
+}
+.earn_mail label {
+    margin: 0 10px 0 0px;
+    font-size: 20px;
+    color: #46989c;
+}
+#message-error {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    padding: 4px 32px;
+    margin: 0 0 0 0px;
+    border-radius: 3px;
+    @media (min-width: $screen-xs-min) {
+     margin: 0 0 0 71px;
+ }
+}
+
+#message-status {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    padding: 4px 32px;
+    border-radius: 3px;
+    margin: 0 0 0 0px;
+    @media (min-width: $screen-xs-min) {
+        margin: 0 0 0 21px;
+    }
+}

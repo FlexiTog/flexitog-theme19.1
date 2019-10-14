@@ -1,0 +1,72 @@
+{
+	"name": "SizeChart",
+	"fantasyName": "Size Chart",
+	"vendor": "SuiteCommerce",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "Add a size chart to your web store.",
+	"assets": {
+		"services": {
+			"files": [
+				"services/SuiteCommerce.SizeChart.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/Main/Configuration/SuiteCommerce.SizeChart.Main.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Chart/Templates/suite_commerce_size_chart_chart.tpl",
+					"Modules/PDP/Templates/suite_commerce_size_chart_pdp.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Main/Sass/_suite_commerce_size_chart_main.scss"
+		},
+		"files": [
+			"Modules/Main/Sass/_suite_commerce_size_chart_main.scss",
+			"Modules/Chart/Sass/_suite_commerce_size_chart_chart.scss",
+			"Modules/PDP/Sass/_suite_commerce_size_chart_pdp.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/SuiteCommerce.SizeChart.Shopping.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Chart/JavaScript/SuiteCommerce.SizeChart.Chart.Router.js",
+					"Modules/Chart/JavaScript/SuiteCommerce.SizeChart.Chart.View.js",
+					"Modules/Chart/JavaScript/SuiteCommerce.SizeChart.Chart.Model.js",
+					"Modules/Chart/JavaScript/SuiteCommerce.SizeChart.Chart.Collection.js",
+					"Modules/Main/JavaScript/SuiteCommerce.SizeChart.Shopping.js",
+					"Modules/PDP/JavaScript/SuiteCommerce.SizeChart.PDP.View.js",
+					"Modules/PDP/JavaScript/SuiteCommerce.SizeChart.PDP.ItemModel.js",
+					"Modules/PDP/JavaScript/SuiteCommerce.SizeChart.PDP.js",
+					"Modules/Chart/JavaScript/SuiteCommerce.SizeChart.Chart.Configuration.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/Chart/SuiteScript/SuiteCommerce.SizeChart.Chart.js",
+		"files": [
+			"Modules/Chart/SuiteScript/SuiteCommerce.SizeChart.Chart.js",
+			"Modules/Chart/SuiteScript/SuiteCommerce.SizeChart.Chart.Model.js",
+			"Modules/Chart/SuiteScript/SuiteCommerce.SizeChart.Chart.ServiceController.js"
+		]
+	},
+	"path": "SuiteBundles/Bundle 284094/extensions/SuiteCommerce/SizeChart@1.0.0",
+	"activation_id": "1",
+	"extension_id": "401"
+}

@@ -1,0 +1,87 @@
+$product-detail-page-shipping-bar-background-progress: $sc-color-theme-background; /* editable({
+   "type": "color",
+   "label": "Progress Background"
+})*/
+
+$product-detail-page-shipping-bar-text-progress: $sc-color-copy; /* editable({
+   "type": "color",
+   "label": "Progress Text"
+})*/
+.product-detail-page-shipping-bar-progress{
+  background: $product-detail-page-shipping-bar-background-progress;
+  color: $product-detail-page-shipping-bar-text-progress;
+}
+
+$product-detail-page-shipping-bar-background-qualifies: $sc-color-theme-background; /* editable({
+   "type": "color",
+   "label": "Qualifies Background"
+})*/
+
+$product-detail-page-shipping-bar-text-qualifies: $sc-color-copy; /* editable({
+   "type": "color",
+   "label": "Qualifies Text"
+})*/
+.product-detail-page-shipping-bar-qualifies{
+  background: $product-detail-page-shipping-bar-background-qualifies;
+  color: $product-detail-page-shipping-bar-text-qualifies;
+}
+
+$product-detail-page-shipping-bar-border: $sc-color-theme-border-light; /* editable({
+   "type": "color",
+   "label": "Banner Border"
+})*/
+
+.product-detail-page-message{
+    border-bottom: 1px solid $product-detail-page-shipping-bar-border;
+    border-top: 1px solid $product-detail-page-shipping-bar-border;
+    text-align: center;
+    font-weight: $sc-font-weight-semibold;
+    font-size: $sc-font-size-s;
+    color: $sc-color-copy;
+    border-radius: 0.2em;
+    margin-top: 1em;
+    @media (max-width: $screen-sm-min) {
+      margin-top: 5em;
+    }
+    @media (max-width: $screen-md-min) {
+      margin-top: 5em;
+    }
+}
+
+
+
+$product-detail-page-qualifies-value-text: $sc-color-copy-dark; /* editable({
+   "type": "color",
+   "label": "Value Text"
+})*/
+
+$product-detail-page-progress-value-text: $sc-color-copy-dark; /* editable({
+   "type": "color",
+   "label": "Progress Value Text"
+})*/
+
+.product-detail-page-shipping-bar-qualifies [class=value-text-color]{
+   color: $product-detail-page-qualifies-value-text;
+}
+
+.product-detail-page-shipping-bar-progress [class=value-text-color]{
+   color: $product-detail-page-progress-value-text;  
+}
+
+/*
+group({
+   "id": "shipping-bar-item",
+   "label": "Product Banner",
+   "description": "",
+   "children": [
+      "$product-detail-page-shipping-bar-background-progress",
+      "$product-detail-page-shipping-bar-text-progress",
+      "$product-detail-page-shipping-bar-background-qualifies",
+      "$product-detail-page-shipping-bar-text-qualifies",
+      "$product-detail-page-shipping-bar-border",
+      "$product-detail-page-qualifies-value-text",
+      "$product-detail-page-progress-value-text"
+   ]
+})
+*/
+

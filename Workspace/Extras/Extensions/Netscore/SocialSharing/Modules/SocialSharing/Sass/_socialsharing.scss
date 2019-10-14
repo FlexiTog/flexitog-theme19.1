@@ -1,0 +1,265 @@
+/*
+    Example sass file
+    Use:
+        * url(getExtensionAssetsPath('img/image.jpg')); to reference images and fonts in your assets folder
+        * url(getThemeAssetsPath('img/theme-image.jpg')); to reference images and fonts in the active theme available
+*/ 
+
+/* Style for email sharing */
+/* Starts here */
+    .main1 {
+        float: left;
+        width: 27%;
+        margin-top: 40px;
+        margin-left: 50px;
+        /*border: 1px solid red;*/
+    }
+    .tierbasedimg{
+        width: 100px;
+        margin-left: 60px;
+    }
+
+    .tiertext {
+        float: left;
+        display: block;
+        width: 100%;
+        text-align: center;
+        border: 1px solid #ff00d4;
+        box-shadow: 10px 10px 5px 5px #888888;
+        margin-bottom: 40px;
+    }
+
+    span.highlight {
+        color: #f709d9;
+    }
+
+    p.blocktext {
+        color: #3f00ff;
+        font-size: 20px;
+        font-style: 241px;
+        font-style: italic;
+    }
+
+    .titles {
+        text-align: center;
+        color: red;
+        font-style: italic;
+        padding-top: 20px;
+    }
+
+    .currentleveltext {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    .currentlevelspan {
+        font-size: large;
+        font-style: italic;
+    }
+    /*newly added style*/
+    .email_share h4 {
+        color: #000;
+
+    }
+    .product_share {
+        color: green;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .product_viewpop label {
+       width: 100%;
+       margin: 0 0 6px 0;
+       font-size: 14px;
+       color: #4c53a5;
+   }
+   .product_viewpop textarea {
+    width: 100%;
+    min-height: auto;
+    border-radius: 3px;
+}
+.product_viewpop input {
+    padding: 6px 11px;
+    border-radius: 3px;
+}
+.popclose {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    background: none;
+    color: #fff;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: 1;
+}
+.submit_frm {
+    background: #e8153e !important;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 6px 14px !important;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #e8153e !important;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin: 10px 0 0 0;
+    border-radius: 3px;
+}
+.submit_frm:hover {
+    color: #fff;
+}
+.nopadding_left {
+    padding-left: 15px;
+     @media (min-width: $screen-md-min) {
+      padding-left: 0px;
+  }
+}
+.nopadding_right {
+    padding-right: 15px;
+    @media (min-width: $screen-md-min) {
+      padding-right: 0px;
+  }
+}
+.nopadding {
+    padding: 15px;
+    @media (min-width: $screen-md-min) {
+      padding: 0px;
+  }
+}
+.share_text {
+    padding: 9px 15px;
+    vertical-align: middle;
+    background: #8c8c8c;
+}
+.share_text h4 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 21px;
+    padding: 0px;
+    vertical-align: middle;
+    margin: 0px;
+}
+.email_share p {
+  color: #444;
+  margin: 0px 0 19px 0px;
+  font-weight: 400;
+  font-size: 15px;
+}
+.email_share h4 {
+  color: #000;
+  margin: 4px 0;
+  font-weight: 400;
+  font-size: 18px;
+}
+.product_viewpop {
+    margin: 12px 0 0 0;
+}
+.emailshare {
+    @extend .loyalty-points-socialshare;
+}
+.loyalty-email-share-icon {
+    @extend .fa;
+    @extend %fa-envelope;
+    background: #dd4b38;
+    color: #fff;
+    padding: 6px 6px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.emailshare a {
+    padding: 10px 10px;
+    background: #f2f2f2;
+    border: 1px solid #e6e6e6;
+} 
+
+#referral-name, #referral-email {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    padding: 4px 32px;
+    margin: 0 0 0 0px;
+    border-radius: 3px;
+    @media (min-width: $screen-xs-min) {
+       margin: 0 0 0 0px; 
+   }
+}
+
+#message {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    padding: 4px 11px;
+    border-radius: 3px;
+    margin: 0 0 0 0px;
+    @media (min-width: $screen-xs-min) {
+        margin: 20px 0px;
+    }
+}
+/* Ends here */
+/* Style for facebook share  */
+/* Starts here */
+.loyalty-points-socialshare {
+    margin: 0 12px 20px 0;
+}
+.loyalty-points-socialshare a {
+    padding: 10px 4px;
+    background: #f2f2f2;
+    border: 1px solid #e6e6e6;
+    font-size: 13px;
+    @media (max-width: $screen-xs-min) {
+    padding: 10px 10px;
+    background: #f2f2f2;
+    border: 1px solid #e6e6e6;
+ }
+}
+.loyalty-points-socialshare a i {
+   background: #3b5998;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+.social-sharing-social-facebook {
+    @extend .fa;
+    @extend %fa-facebook;
+}
+/* Ends here */
+
+/* Netscore Added a code for Social Sharing layouts display inline */
+/* Starts Here */
+.fbshare {
+        display: block;
+    float: left;
+    @media (min-width: $screen-xs-min){
+    display: inline;
+    float: left;
+    width: auto;
+ }
+}
+.email-share {
+    background: #f2f2f2;
+    padding: 10px 10px;
+    display: inline-block;
+    float: left;
+    border: 1px solid #ececec;
+    margin-right: 10px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+#fb-success-msg {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    padding: 4px 11px;
+    border-radius: 3px;
+    margin: 0 0 0 0px;
+    @media (min-width: $screen-xs-min) {
+        margin: 20px 0px;
+    }
+}
+.share_link {
+    width: 100%;
+    float: left;
+}
+/* Ends Here */  

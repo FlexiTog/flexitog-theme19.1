@@ -1,0 +1,71 @@
+{
+	"name": "LoyaltyPointsPDP",
+	"fantasyName": "Loyalty Points PDP",
+	"vendor": "Netscore",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "This Extension is used to show points in PDP page",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/LoyaltyPointsPDP.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/LoyaltyPointsPDP/Configuration/LoyaltyPointsPDP.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/LoyaltyPointsPDP/Templates/netscore_loyaltypointspdp_loyaltypointspdp_list.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/LoyaltyPointsPDP/Sass/_loyaltypointspdp-loyaltypointspdp.scss"
+		},
+		"files": [
+			"Modules/LoyaltyPointsPDP/Sass/_loyaltypointspdp-loyaltypointspdp.scss",
+			"Modules/LoyaltyPointsPDP/Sass/_loyaltypointspdp.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/LoyaltyPointsPDP/JavaScript/Netscore.LoyaltyPointsPDP.LoyaltyPointsPDP.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/LoyaltyPointsPDP/JavaScript/Netscore.LoyaltyPointsPDP.LoyaltyPointsPDP.js",
+					"Modules/LoyaltyPointsPDP/JavaScript/LoyaltyPointsPDP.List.View.js",
+					"Modules/LoyaltyPointsPDP/JavaScript/LoyaltyPointsPDP.Collection.js",
+					"Modules/LoyaltyPointsPDP/JavaScript/LoyaltyPointsPDP.Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/LoyaltyPointsPDP/SuiteScript/Netscore.LoyaltyPointsPDP.LoyaltyPointsPDP.js",
+		"files": [
+			"Modules/LoyaltyPointsPDP/SuiteScript/Netscore.LoyaltyPointsPDP.LoyaltyPointsPDP.js",
+			"Modules/LoyaltyPointsPDP/SuiteScript/LoyaltyPointsPDP.ServiceController.js",
+			"Modules/LoyaltyPointsPDP/SuiteScript/LoyaltyPointsPDP.Model.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Netscore/LoyaltyPointsPDP@1.0.0",
+	"activation_id": "1",
+	"extension_id": "103"
+}

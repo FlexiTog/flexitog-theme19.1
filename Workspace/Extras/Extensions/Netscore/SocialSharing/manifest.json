@@ -1,0 +1,66 @@
+{
+	"name": "SocialSharing",
+	"fantasyName": "SocialSharing",
+	"vendor": "Netscore",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "this extension is used to share product using email and  facebook ",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/SocialSharing.Service.ss"
+			]
+		}
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/SocialSharing/Templates/netscore_socialsharing_socialsharing_list.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/SocialSharing/Sass/_socialsharing-socialsharing.scss"
+		},
+		"files": [
+			"Modules/SocialSharing/Sass/_socialsharing-socialsharing.scss",
+			"Modules/SocialSharing/Sass/_socialsharing.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/SocialSharing/JavaScript/Netscore.SocialSharing.SocialSharing.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/SocialSharing/JavaScript/Netscore.SocialSharing.SocialSharing.js",
+					"Modules/SocialSharing/JavaScript/SocialSharing.Router.js",
+					"Modules/SocialSharing/JavaScript/SocialSharing.List.View.js",
+					"Modules/SocialSharing/JavaScript/SocialSharing.Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/SocialSharing/SuiteScript/Netscore.SocialSharing.SocialSharing.js",
+		"files": [
+			"Modules/SocialSharing/SuiteScript/Netscore.SocialSharing.SocialSharing.js",
+			"Modules/SocialSharing/SuiteScript/SocialSharing.ServiceController.js",
+			"Modules/SocialSharing/SuiteScript/SocialSharing.Model.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Netscore/SocialSharing@1.0.0",
+	"activation_id": "1",
+	"extension_id": "108"
+}

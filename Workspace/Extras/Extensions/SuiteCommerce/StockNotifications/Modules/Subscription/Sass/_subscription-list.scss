@@ -1,0 +1,83 @@
+
+.stocknotifications-header{
+	@include clearfix();
+	border-top: 1px solid $sc-color-theme-border;
+	border-bottom: 1px solid $sc-color-theme-border;
+	padding-top: $sc-padding-base * 3;
+	padding-bottom: $sc-padding-base * 3;
+}
+.stocknotifications-title{
+	float: left;
+	margin-bottom: $sc-margin-base * 2;
+
+	@media (min-width: $screen-sm-min){
+		margin-bottom: 0;
+		line-height: 45px;
+		height: 45px;
+	}
+}
+
+.stocknotifications-details-wrapper{
+	border-bottom: 1px solid $sc-color-theme-border;
+}
+
+.stocknotifications-details-wrapper:hover{
+	background-color: $sc-color-theme-100;
+}
+
+.stocknotifications-cancel-button{
+	@extend .button-small;
+	@extend .button-primary;
+}
+
+.stocknotifications-details-main {
+	@extend .table-flex-td-first;
+  padding-bottom: $sc-padding-lv3;
+  padding-top: $sc-padding-lv3;
+	@media (min-width: $screen-md-min){
+		width: 45%;
+	}
+}
+
+.stocknotifications-actions-cell{
+  &.mobile{
+    @media (min-width: $screen-md-min){
+      display: none;
+      margin:auto;
+    }
+  }
+  &.desktop{
+    @media (max-width: $screen-md-min){
+      display: none;
+      margin:auto;
+    }
+  }
+}
+
+.stocknotifications-item-name{
+	@extend .small-title-navigable;
+}
+
+.stocknotifications-details{
+  width: 100%;
+}
+
+.stocknotifications-table-body{
+  vertical-align: middle;
+  td,th {
+    vertical-align: middle;
+  }
+}
+
+.stocknotifications-table-head{
+  @extend .recordviews-actionable-header;
+}
+
+.stocknotifications-undo-button{
+  @extend .button-small;
+	@extend .button-secondary;
+}
+.stocknotifications-cover p{
+  opacity: 0.5;
+}
+

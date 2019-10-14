@@ -1,0 +1,62 @@
+{
+	"name": "PointsRedeemCheckout",
+	"fantasyName": "Loyalty Points Redeem During Checkout",
+	"vendor": "Netscore",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "This Extension is used to redeem availble loyalty points at the time of checout.",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/PointsRedeemCheckout.Service.ss"
+			]
+		}
+	},
+	"templates": {
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/PointsRedeemCheckout/Templates/netscore_pointsredeemcheckout_pointsredeemcheckout.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"checkout": "Modules/PointsRedeemCheckout/Sass/_pointsredeemcheckout-pointsredeemcheckout.scss"
+		},
+		"files": [
+			"Modules/PointsRedeemCheckout/Sass/_pointsredeemcheckout-pointsredeemcheckout.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"checkout": "Modules/PointsRedeemCheckout/JavaScript/Netscore.PointsRedeemCheckout.PointsRedeemCheckout.js"
+		},
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/PointsRedeemCheckout/JavaScript/Netscore.PointsRedeemCheckout.PointsRedeemCheckout.js",
+					"Modules/PointsRedeemCheckout/JavaScript/PointsRedeemCheckout.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/PointsRedeemCheckout/SuiteScript/Netscore.PointsRedeemCheckout.PointsRedeemCheckout.js",
+		"files": [
+			"Modules/PointsRedeemCheckout/SuiteScript/Netscore.PointsRedeemCheckout.PointsRedeemCheckout.js",
+			"Modules/PointsRedeemCheckout/SuiteScript/PointsRedeemCheckout.ServiceController.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Netscore/PointsRedeemCheckout@1.0.0",
+	"activation_id": "1",
+	"extension_id": "1301"
+}

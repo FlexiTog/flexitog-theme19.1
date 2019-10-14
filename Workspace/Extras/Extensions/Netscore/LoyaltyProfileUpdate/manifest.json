@@ -1,0 +1,66 @@
+{
+	"name": "LoyaltyProfileUpdate",
+	"fantasyName": "Loyalty Profile Update",
+	"vendor": "Netscore",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "This extension is used to get birthday date and anniversary date  and update  in the customer record .customer will get points for both events",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/LoyaltyProfileUpdate.Service.ss"
+			]
+		}
+	},
+	"templates": {
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/LoyaltyProfileUpdate/Templates/netscore_loyaltyprofileupdate_loyaltyprofileupdate_list.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"myaccount": "Modules/LoyaltyProfileUpdate/Sass/_loyaltyprofileupdate-loyaltyprofileupdate.scss"
+		},
+		"files": [
+			"Modules/LoyaltyProfileUpdate/Sass/_loyaltyprofileupdate-loyaltyprofileupdate.scss",
+			"Modules/LoyaltyProfileUpdate/Sass/_loyaltyprofileupdate.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"myaccount": "Modules/LoyaltyProfileUpdate/JavaScript/Netscore.LoyaltyProfileUpdate.LoyaltyProfileUpdate.js"
+		},
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/LoyaltyProfileUpdate/JavaScript/Netscore.LoyaltyProfileUpdate.LoyaltyProfileUpdate.js",
+					"Modules/LoyaltyProfileUpdate/JavaScript/LoyaltyProfileUpdate.Router.js",
+					"Modules/LoyaltyProfileUpdate/JavaScript/LoyaltyProfileUpdate.List.View.js",
+					"Modules/LoyaltyProfileUpdate/JavaScript/LoyaltyProfileUpdate.Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/LoyaltyProfileUpdate/SuiteScript/Netscore.LoyaltyProfileUpdate.LoyaltyProfileUpdate.js",
+		"files": [
+			"Modules/LoyaltyProfileUpdate/SuiteScript/Netscore.LoyaltyProfileUpdate.LoyaltyProfileUpdate.js",
+			"Modules/LoyaltyProfileUpdate/SuiteScript/LoyaltyProfileUpdate.ServiceController.js",
+			"Modules/LoyaltyProfileUpdate/SuiteScript/LoyaltyProfileUpdate.Model.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Netscore/LoyaltyProfileUpdate@1.0.0",
+	"activation_id": "1",
+	"extension_id": "105"
+}

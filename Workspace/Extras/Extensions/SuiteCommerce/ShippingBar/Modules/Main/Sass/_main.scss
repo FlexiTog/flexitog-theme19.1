@@ -1,0 +1,31 @@
+/*
+group({
+   "id": "shipping-bar",
+   "label": "SC Shipping bar",
+   "description": "",
+   "children": [
+      "shipping-bar-header",
+      "shipping-bar-cart",
+      "shipping-bar-item",
+      "shipping-bar-alternates"
+   ]
+})
+*/
+
+@import "../../PDPShippingBar/Sass/_pdp-shipping-bar.scss";
+@import "../../CartShippingBar/Sass/_cart-shipping-bar.scss";
+@import "../../HeaderShippingBar/Sass/_header-shipping-bar.scss";
+@import "../Sass/icons";
+
+.Small{
+    padding: $sc-padding-lv2;
+}
+ 
+.Medium{
+    padding: $sc-padding-lv3;
+
+}
+
+.Large{
+    padding: $sc-padding-lv4;
+}
