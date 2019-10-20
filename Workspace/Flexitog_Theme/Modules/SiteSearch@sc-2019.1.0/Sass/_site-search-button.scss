@@ -1,0 +1,46 @@
+//header search	
+
+.site-search-button-link {
+	margin-right: 0;
+	cursor: pointer;
+	background-color: $flexitog-darkred;
+	color: $flexitog-white;
+	margin-left: $sc-margin-lv2;
+	margin-right: 0px;
+	font-size: $sc-font-size-xl;
+	padding: 10px 10px;
+	position: relative;
+	outline: none;
+	height: $sc-target-size;
+	width: $sc-target-size;
+	text-align: center;
+	border-radius: 2px;
+
+	@media (min-width: $screen-md-min) {
+		display: none;
+	}
+}
+
+.site-search-button-link:hover {
+	i {
+		color: $sc-color-copy-dark;
+	}
+
+	background-color:$flexitog-white;
+}
+
+.site-search-button-link.active {
+	background-color: $flexitog-white;
+
+	i {
+		color: $sc-color-copy-dark;
+	}
+}
+
+.site-search-button-icon {
+	@extend .fa;
+	@extend %fa-search;
+
+	color: $flexitog-white;
+	font-size: $sc-font-size-xl;
+}

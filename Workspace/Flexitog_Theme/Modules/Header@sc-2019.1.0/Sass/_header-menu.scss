@@ -1,0 +1,197 @@
+///////////////////////////////////////////////////////////////
+//header secondary nav
+.header-menu-secondary-nav {
+	@extend .container;
+}
+
+///////////////////////////////////////////////////////////////
+//header search
+
+.header-menu-search {
+	float: right;
+}
+
+.header-menu-searchmobile-link {
+	margin-right: 0;
+	cursor: pointer;
+	background: none;
+
+	@media (min-width: $screen-sm-min) {
+		margin-right: $sc-margin-lv2;
+	}
+}
+
+.header-menu-searchmobile-link.active {
+	background: $sc-color-theme-background;
+}
+
+///////////////////////////////////////////////////////////////
+//header maxi menu
+
+.header-menu-level1 {
+	margin-left: 0;
+}
+
+.header-menu-level1>li {
+	@media (min-width: $screen-md-min) {
+		float: left;
+	}
+}
+
+.header-menu-level1-anchor {
+	display: block;
+	position: relative;
+	box-sizing: border-box;
+	padding: 0 $sc-padding-lv2;
+	height: $sc-target-size;
+	color: $sc-color-copy;
+	width: 100%;
+	text-transform: $sc-main-navigation-link-text-transform;
+	font-size: $sc-font-size-m;
+
+	line-height: $sc-target-size;
+
+	border-bottom: 1px solid $sc-color-theme-border;
+
+	&:hover {
+		color: $sc-color-copy-dark;
+		background-color: $sc-color-theme-background;
+	}
+
+	&:active {
+		color: $sc-color-copy-dark;
+		background-color: $sc-color-theme-background;
+	}
+
+	@media (min-width: $screen-md-min) {
+		box-sizing: content-box;
+		border-bottom: none;
+		border-right: 1px solid rgba(255, 255, 255, .3);
+
+		background-color: $sc-main-navigation-link-background-color;
+		color: $sc-main-navigation-link-color;
+		width: auto;
+
+		&:hover {
+			color: $sc-main-navigation-link-hover-color;
+			background-color: $sc-main-navigation-link-hover-background-color;
+		}
+
+		&:active {
+			color: $sc-main-navigation-link-active-color;
+			background-color: $sc-main-navigation-link-active-background-color;
+		}
+		&:focus {
+			color: $sc-main-navigation-link-active-color;
+			background-color: $sc-main-navigation-link-active-background-color;
+		}
+	}
+}
+
+@media (min-width: $screen-md-min) {
+	.header-menu-level1 {
+		li:last-child {
+			a.header-menu-level1-anchor {
+				border-right: 0px none transparent;
+			}
+		}
+	}
+
+	.open .header-menu-level1-anchor {
+		color: $sc-main-navigation-link-hover-color;
+		background-color: $sc-main-navigation-link-hover-background-color;
+		border-bottom: 20px solid $flexitog-white;
+	}
+}
+
+.header-menu-home-anchor,
+.header-menu-shop-anchor {
+	display: none;
+}
+
+//maxi menu level 2
+.header-menu-back {
+	display: none;
+}
+
+.header-menu-level2>li {
+	float: left;
+	width: 25%;
+	border-right: 1px solid $sc-color-theme-border-light;
+	margin-bottom: $sc-margin-lv1;
+
+	&:last-child {
+		border-right: 0px none transparent;
+	}
+
+}
+
+.header-menu-level2-anchor {
+	text-transform: $sc-main-navigation-submenu-heading-text-transform;
+	text-decoration: $sc-main-navigation-submenu-heading-text-decoration;
+	font-weight: $sc-font-weight-semibold;
+	color: $sc-main-navigation-submenu-heading-color;
+
+	display: block;
+
+	&:hover {
+		color: $sc-color-copy;
+	}
+}
+
+//maxi menu level 3
+.header-menu-level3-anchor {
+	display: block;
+	padding: $sc-padding-lv1 0;
+	color: $sc-main-navigation-submenu-link-color;
+
+	&:hover,
+	&:focus {
+		color: $sc-main-navigation-submenu-link-hover-color;
+	}
+
+	&:active,
+	&.active {
+		color: $sc-main-navigation-submenu-link-active-color;
+	}
+}
+
+//container fix for maxi menu on desktop
+.header-menu-push-icon,
+.header-menu-pop-icon {
+	display: none;
+}
+
+.header-menu-level-container {
+	display: none;
+
+	
+		background-color: $sc-main-navigation-submenu-background-color;
+
+		position: absolute;
+		left: 0;
+		width: 100%;
+		min-height: 150px;
+		z-index: 1003;
+
+		border-bottom: 1px solid $sc-color-theme-border-light;
+
+		@include box-shadow(0 6px 6px transparentize($sc-neutral-shade-500, 1-0.175));
+
+		>li {
+			@extend .container;
+			padding: $sc-padding-lv6 $sc-padding-lv7;
+		}
+
+		a {
+			color: $sc-color-copy-light;
+		}
+	
+}
+
+//maxi menu opened
+@media (min-width: $screen-md-min) {
+	.open .header-menu-level-container {
+		display: block;
+	}
+}
