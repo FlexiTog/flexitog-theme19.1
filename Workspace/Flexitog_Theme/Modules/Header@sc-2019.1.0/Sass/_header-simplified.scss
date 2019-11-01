@@ -1,0 +1,14 @@
+.header-simplified-header{
+	height: $sc-main-nav-height;
+	background-color: $sc-top-menu-background-color;
+	
+}
+
+.header-simplified-header-logo{
+	text-align: center;
+
+	.header-logo-image{
+		width: auto;
+	}
+}
+
