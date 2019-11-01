@@ -1,0 +1,41 @@
+
+.facets-browse-category-heading-list-header
+{
+	display: block;
+}
+
+.facets-browse-category-heading-main-description
+{
+	width: 100%;
+	text-align: center;
+	padding-top:$sc-padding-lv6!important;
+
+	@media (min-width: $screen-md-min)
+	{
+		padding-top:0!important;
+
+	}
+	div{
+		padding-left:$sc-padding-lv3;
+		padding-right:$sc-padding-lv3;
+		text-align: justify;
+    text-align-last: center;
+	}
+
+}
+
+.facets-browse-category-heading-main-description h3
+{
+	text-transform: none;
+	font-weight: normal;
+}
+
+.facets-browse-category-heading-main-image
+{
+	display: none;
+
+	@media (min-width: $screen-md-min)
+	{
+		display: inherit;
+	}
+}
