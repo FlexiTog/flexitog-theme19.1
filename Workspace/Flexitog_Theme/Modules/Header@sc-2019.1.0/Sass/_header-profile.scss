@@ -20,19 +20,12 @@
 }
 
 .header-profile-welcome-link-name{
-	display: block;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow: hidden;
-
-	@media (min-width: $screen-md-min){
-		display: inline;
-	}
+	display: inline;
 }
 
 .header-profile-welcome-user-icon{
 	@extend .fa;
-	@extend %fa-user;
+	@extend %fa-user-circle;
 
 	font-size: $sc-font-size-l;
 	color:inherit!important;
@@ -79,6 +72,8 @@
 	z-index: 1005;
 	
 }
+
+
 
 .open .header-profile-welcome-link:before {
 	position: absolute;

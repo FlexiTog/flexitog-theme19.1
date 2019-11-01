@@ -4,15 +4,15 @@
 
   h1{
 	  margin-bottom:1rem;
-	  font-size:$sc-font-size-xxxl;
+	  font-size:$sc-h1-font-size;
   }
   h2,h3,h4,h5,h6{
 	margin-bottom:.5rem;
 }
 p{
 	margin-bottom:1.5rem;
-	margin-left:.75rem;
-	margin-right:.75rem;
+	padding-left:.75rem;
+	padding-right:.75rem;
 }
 table{
 	margin-top:.5rem;
@@ -136,26 +136,20 @@ ol>li {
 	padding:0 $sc-padding-lv8*1.5 $sc-padding-lv8 $sc-padding-lv8*1.5;
 
 	h1{
-		font-size:$sc-font-size-xxxl*1.5;
+		font-size:$sc-h1-font-size*1.2;
 	}
   }
   @media (min-width: $screen-md-min) {
 	padding:0 $sc-padding-lv8*2.5 $sc-padding-lv8 $sc-padding-lv8*2.5;
 
 	h1{
-		font-size:$sc-font-size-xxxl*2;
+		font-size:$sc-h1-desktop-font-size*1.4;
 	}
   }
 }
 
-.cms-content-CMS_HTML{
+.cms-content-CMS_TEXT:first-of-type,.cms-content-CMS_HTML:first-of-type{
 	padding-top:$sc-padding-lv6;
-	@media (min-width: $screen-sm-min) {
-		padding-top:$sc-padding-lv8;
-	}
-	@media (min-width: $screen-md-min) {
-		padding-top:$sc-padding-lv3;
-	}
 }
 .product-details-information-tab-content-container,.facets-browse-category-heading-main-description{
 	padding:0;

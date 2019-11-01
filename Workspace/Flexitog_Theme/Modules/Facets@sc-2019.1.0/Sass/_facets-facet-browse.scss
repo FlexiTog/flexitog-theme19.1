@@ -33,6 +33,7 @@
 
 .facets-facet-browse-list-header-actions {
 	@extend .list-header-actions;
+	display:none;
 }
 
 .facets-facet-browse-list-header-expander {
@@ -123,7 +124,7 @@
 }
 
 .facets-facet-browse-results {
-	@extend .col-md-9;
+	@extend .col-xs-12;
 	padding: 0;
 }
 
